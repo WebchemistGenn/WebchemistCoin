@@ -4,6 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"os"
+	"runtime"
 
 	"github.com/WebchemistGenn/WebchemistCoin/explorer"
 	"github.com/WebchemistGenn/WebchemistCoin/rest"
@@ -14,7 +15,7 @@ func usage() {
 	fmt.Printf("Please use the following commands:\n\n")
 	fmt.Printf("-port=4000: 		Set the PORT of the SERVER\n")
 	fmt.Printf("-mode=rest: 		Choose between 'html' and 'rest'\n\n")
-	os.Exit(0)
+	runtime.Goexit()
 }
 func Start() {
 	if len(os.Args) < 2 {
