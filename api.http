@@ -9,10 +9,21 @@ http://localhost:4000/blocks
 
 POST http://localhost:4000/blocks
 
-{
-  "message": "Data for my block"
-}
 ###
 
 http://localhost:4000/blocks/577a6a1316f9cff675abc66bab10daec04dae9baae9bdf4127a3d0730cb19424
 ###
+
+POST http://localhost:4000/transactions
+
+{
+  "to": "rose",
+  "amount": 30
+}
+###
+
+http://localhost:4000/mempool
+
+###
+
+http://localhost:4000/balance/webc?total=true
