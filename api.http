@@ -26,4 +26,8 @@ http://localhost:4000/mempool
 
 ###
 
-http://localhost:4000/balance/webc?total=true
+http://localhost:4000/wallet
+
+###
+
+http://localhost:4000/balance/0cdac81ea7e73a2bfa667ee379df60ea19ea7755711ad478242b49e002d4749c986cea024a2ecfeccb01c7c6c53b957b092bc58202c3d679877ab4d85af3af86

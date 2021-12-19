@@ -1,12 +1,13 @@
 package main
 
 import (
-	"github.com/WebchemistGenn/WebchemistCoin/wallet"
+	"github.com/WebchemistGenn/WebchemistCoin/blockchain"
+	"github.com/WebchemistGenn/WebchemistCoin/cli"
+	"github.com/WebchemistGenn/WebchemistCoin/database"
 )
 
 func main() {
-	// defer database.Close()
-	// blockchain.Blockchain()
-	// cli.Start()
-	wallet.Start()
+	defer database.Close()
+	blockchain.Blockchain()
+	cli.Start()
 }
